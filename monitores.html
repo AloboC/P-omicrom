@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Omicron venta de equipos electronicos</title>
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.css">
+	<link rel="stylesheet" href="FontAwesome/css/all.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- meta para el responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="muestraMonto();">
+
+	<header>
+		<div class="logo">
+			<h1>Omicrom Technology</h1>
+		</div>
+		<div class="slider">
+			<img class="imgSlider" src="imagenes/aria-vertagear-banner.jpg">
+			<img class="imgSlider" src="imagenes/laptopsgamingsi-1140x150.jpg">
+			<!-- <img class="imgSlider" src="imagenes/logo2.jpg"> -->
+		</div>
+	</header>
+	<nav>
+		<ul id="menu">
+			<li><a href="index.html"><i><i class="fas fa-home"></i></i> Inicio</a></li>
+			<li><a href="#"><i><i class="fas fa-laptop"></i></i> Computadoras <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('gaming.html')">Gaming</a></li>
+					<li><a href="javascript:pasarVariables('oficinaHogar.html')">Hogar / Oficina</a></li>
+					<li><a href="javascript:pasarVariables('laptop.html')">Laptop</a></li>
+					<li><a href="javascript:pasarVariables('monitores.html')">Monitores</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i><i class="fas fa-hdd"></i></i> Componentes <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('procesadores.html')">Procesadores</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaMadre.html')">Tarjetas Madre</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaVideo.html')">Tarjetas de Video</a></li>
+					<li><a href="#">Almacenamiento <i><i class="fas fa-angle-down"></i></i></a>
+						<ul id="menu3">
+							<li><a href="javascript:pasarVariables('discosDuros.html')">Disco Duro</a></li>
+							<li><a href="javascript:pasarVariables('discosExternos.html')">Disco Externo</a></li>
+							<li><a href="javascript:pasarVariables('ssd.html')">SSD</a></li>
+							<li><a href="javascript:pasarVariables('usb.html')">Memoria USB</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#"><i><i class="fas fa-headset"></i></i> Periféricos <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('teclado.html')">Teclados</a></li>
+					<li><a href="javascript:pasarVariables('mouse.html')">Mouses</a></li>
+					<li><a href="javascript:pasarVariables('headset.html')">Headset</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i><i class="fas fa-plug"></i></i> Accesorios <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('sillas.html')">Sillas gammer</a></li>
+					<li><a href="javascript:pasarVariables('adaptadores.html')">Adaptadores</a></li>
+					<li><a href="javascript:pasarVariables('encapsulador.html')">Encapsuladores</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<button id="btnMenu" type="" onclick="deslizarMenu();"><i><i class="fas fa-bars"></i></i></button>
+	</nav>
+
+	<section>
+		<div id="tituloseccion">
+			<h2>Monitores</h2>
+		</div>
+
+		<div class="contenidoPagina">
+			<div>
+				<i class="btnPrec" id="btn_1" onclick="capturaPrecio(this.id);"><i class="fas fa-check-circle"></i></i>
+				<i class="btnEliminarPrec" id="btnE_1" onclick="eliminarPrecio(this.id);"><i class="far fa-times-circle"></i></i>
+				<span class="cont">0</span>
+
+				<a href="#"><img src="imagenes/monitor1.jpg" alt="" id="1" onclick="mostrar(this.id);"></a>
+				<h3>LG 34UC79G-B 34" Curvo 144 Hz FreeSync IPS</h3>
+				<br>
+				<p><b>Precio: ¢ </b><span>440597.03 </span>i.v.i</p>
+
+			</div>
+			<div>
+				<i class="btnPrec" id="btn_2" onclick="capturaPrecio(this.id);"><i class="fas fa-check-circle"></i></i>
+				<i class="btnEliminarPrec" id="btnE_2" onclick="eliminarPrecio(this.id);"><i class="far fa-times-circle"></i></i>
+				<span class="cont">0</span>
+
+				<a href="#"><img src="imagenes/monitor2.jpg" alt="" id="2" onclick="mostrar(this.id);"></a>
+				<h3>MSI Optix MAG27CQ 27" LED - 1440P - 144 Hz Curvo - Curvo - 144HZ - 1MS - Regalía HEADSET + MOUSE</h3>
+				<br>
+				<p><b>Precio: ¢ </b><span>384000.00 </span>i.v.i</p>
+			</div>
+			<div>
+				<i class="btnPrec" id="btn_3" onclick="capturaPrecio(this.id);"><i class="fas fa-check-circle"></i></i>
+				<i class="btnEliminarPrec" id="btnE_3" onclick="eliminarPrecio(this.id);"><i class="far fa-times-circle"></i></i>
+				<span class="cont">0</span>
+
+				<a href="#"><img src="imagenes/monitor3.jpg" alt="" id="3" onclick="mostrar(this.id);"></a>
+				<h3>Acer Gaming Monitor 24" GN246HL 144Hz - 1ms</h3>
+				<br>
+				<p><b>Precio: ¢ </b><span>165517.24 </span>i.v.i</p>
+			</div>
+		</div>
+		<!-- div para el modal con la informacion del producto -->
+		<!-- imagen 1 -->
+		<div id="img1" class="modal1">
+			<spa id="cerrar" onclick="ocultar();">&times;</spa>
+			<div class="modal2">
+				<img id="im" src="imagenes/monitor1.jpg" alt="">
+				<div id="info" class="info">
+					<h1>Características del Producto</h1>
+					<br>
+					<p>Monitor 34 "</p>
+					<p>Panel tipo IPS tipo LCD</p>
+					<p>Pantalla táctil No</p>
+					<p>Resolución nativa 2560 x 1080</p>
+					<p>Brillo máximo 250 cd / m2</p>
+					<p>Frecuencia de actualización 144 Hz</p>
+					<p>Tecnología de sincronización adaptativa FreeSync</p>
+					<p>Profundidad de bits / Soporte de color de 8 bits (16.7 millones de colores)</p>
+					<p>Gama de colores 72% NTSC</p>
+					<p>Tiempo de respuesta 14 ms</p>
+					<p>5 ms (GtG)</p>
+					<p>Ángulo de visión horizontal: 178 ° y Vertical: 178 °</p>
+					<p>Conectividad 1 x Entrada USB Tipo A (USB 3.0)</p>
+					<p>Ajuste de altura 4.7 "/ 11.9 cm</p>
+					<p>Ajuste de inclinación -5 a 20 °</p>
+					<p>Dimensiones (ancho x alto x ancho) 32.7 x 11.0 x 17.7 "/ 83.1 x 27.9 x 45.0 mm (con soporte)</p>
+					<p>32.7 x 14.6 x 3.0 "/ 83.1 x 37.1 x 7.6 mm (sin soporte)</p>
+					<p>Peso 14.1 lb / 6.4 kg (sin soporte)</p>
+					<p>18.9 lb / 8.6 kg (con soporte)</p>
+					<p>Dimensiones de la caja (LxWxH) 38.0 x 20.5 x 8.0 "</p>
+					<p>Consumo de energía 50 W (típico)</p>
+					<p>Potencia de entrada de CA 100 a 240 VCA, 50/60 Hz</p>
+				</div>
+			</div>
+		</div>
+		<!-- imagen 1 -->
+
+		<!-- imagen 2 -->
+		<div id="img2" class="modal1">
+			<spa id="cerrar" onclick="ocultar();">&times;</spa>
+			<div class="modal2">
+				<img id="im" src="imagenes/monitor2.jpg" alt="">
+				<div id="info" class="info">
+					<h1>Caracteristicas del Producto:</h1>
+					<br>
+					<p>Optix MAG27CQ. Equipado con una resolución de 2560x1440, frecuencia de actualización de 144Hz,
+						un panel VA de tiempo de respuesta de 1 ms, el Optix MAG27CQ lo ayudará a ver a sus oponentes y
+						apuntar con facilidad. Construido con la tecnología Adaptive Sync, el MAG27CQ puede igualar la
+						frecuencia de actualización de la pantalla con su GPU para una jugabilidad ultrasuave.
+						Asegúrate de que puedes alcanzar tu marca con todas las últimas tecnologías incorporadas
+						en los monitores Curious Gaming de MSI para un juego competitivo.</p>
+					<br>
+					<p>Pantalla gaming curva (1800R) – La mejor inmersión.</p>
+					<p>Resolución 1440p – Más píxels, More pixels, imagen más nítida</p>
+					<p>Tasa de refresco de 144Hz – Juega realmente suave.</p>
+					<p>1ms de tiempo de respuesta para eliminar los desgarros en la pantalla</p>
+					<p>Diagonal de la pantalla: 68,6 cm (27")</p>
+					<p>Tipo HD: HD+</p>
+					<p>Pantalla: LED</p>
+					<p>Ángulo de visión, horizontal: 178°</p>
+					<p>Ángulo de visión, vertical: 178°</p>
+				</div>
+			</div>
+		</div>
+		<!-- imagen 2 -->
+
+		<!-- imagen 3 -->
+		<div id="img3" class="modal1">
+			<spa id="cerrar" onclick="ocultar();">&times;</spa>
+			<div class="modal2">
+				<img id="im" src="imagenes/monitor3.jpg" alt="">
+				<div id="info" class="info">
+					<h1>Caracteristicas del Producto:</h1>
+					<br>
+					<p>El monitor de pantalla panorámica 3D Full HD 3D de Acer GN246HL luce
+						un perfil súper delgado con un soporte en forma de X que le permite
+						encajar perfectamente en espacios de cualquier tamaño. El excelente
+						rendimiento, la compatibilidad ecológica y el uso inteligente de la
+						energía complementan el diseño elegante, todo sin salirse del presupuesto.
+						Este monitor Acer presenta una pantalla panorámica LCD de 24 pulgadas con
+						una impresionante resolución de 1920 x 1080 que ofrece detalles excelentes,
+						lo que lo hace perfecto para aplicaciones de juegos HD panorámicos, multimedia
+						y de productividad. Este monitor combina las especificaciones de caída de mandíbulas,
+						compatible con la frecuencia de actualización de 144Hz, entregando una experiencia de
+						juego increíble.</p><br>
+					<p>Área visible: 24 "</p>
+					<p>Frecuencia de actualización: 144Hz</p>
+					<p>Paso de píxeles: 0.276 mm</p>
+					<p>Tiempo de respuesta: 1 ms</p>
+					<p>NVIDIA 3D Vision Ready</p>
+					<p>NVIDIA 3D Lightboost</p>
+				</div>
+			</div>
+		</div>
+		<!-- imagen 3 -->
+
+
+		<!-- div para el modal con la informacion del producto -->
+	</section>
+	<aside>
+		<div id="accordion">
+			<h3 class="tituloMenu2"><i><i class="fas fa-calculator"></i></i> Cotice aquí su pc</h3>
+			<div>
+				<br>
+				<p> Total Cotizado:</p>
+				<br>
+				<input id="total" type="text" name="" value="¢ 0" placeholder="" readonly="readonly">
+
+				<br><br>
+				<p>Seleccione el check que tiene cada producto para agregarlo a la cotización</p>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-laptop"></i></i> Computadoras</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('gaming.html')">Gaming</a></li>
+					<li><a href="javascript:pasarVariables('oficinaHogar.html')">Hogar / Oficina</a></li>
+					<li><a href="javascript:pasarVariables('laptop.html')">Laptop</a></li>
+					<li><a href="javascript:pasarVariables('monitores.html')">Monitores</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-hdd"></i></i> Componentes</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('procesadores.html')">Procesadores</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaMadre.html')">Tarjetas Madre</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaVideo.html')">Tarjetas de Video</a></li>
+					<li><a href="javascript:pasarVariables('discosDuros.html')">Disco Duro</a></li>
+					<li><a href="javascript:pasarVariables('discosExternos.html')">Disco Externo</a></li>
+					<li><a href="javascript:pasarVariables('ssd.html')">SSD</a></li>
+					<li><a href="javascript:pasarVariables('usb.html')">Memoria USB</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-headset"></i></i> Periféricos</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('teclado.html')">Teclados</a></li>
+					<li><a href="javascript:pasarVariables('mouse.html')">Mouses</a></li>
+					<li><a href="javascript:pasarVariables('headset.html')">Headset</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-plug"></i></i> Accesorios</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('sillas.html')">Sillas gammer</a></li>
+					<li><a href="javascript:pasarVariables('adaptadores.html')">Adaptadores</a></li>
+					<li><a href="javascript:pasarVariables('encapsulador.html')">Encapsuladores</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="far fa-clock"></i></i> Horarios</h3>
+			<div>
+				<br><br><br>
+				<p><b> de lunes a viernes de 8:00 am a 6:00 pm y sabados de 8:00 am a 1:00 pm </b></p>
+			</div>
+		</div>
+	</aside>
+	<footer>
+		<div id="informacion">
+			<h1>Servicio al cliente</h1>
+			<br>
+			<ul>
+				<li><i><i class="fas fa-phone-volume"></i></i>
+					<p>(506)2256 4588 / (506)48561200</p>
+				</li>
+				<br>
+				<li><i><i class="fas fa-envelope"></i></i>
+					<p>www.ventas@Omicroncr.com</p>
+				</li>
+				<div id="redesS">
+					<div class="rs"><a href="#"><i><i class="fab fa-facebook"></i></i></a></div>
+					<div class="rs"><a href="#"><i><i class="fab fa-instagram"></i></i></a></div>
+					<div class="rs"><a href="#"><i><i class="fab fa-twitter-square"></i></i></a></div>
+				</div>
+			</ul>
+			<br>
+			<h2>Misión</h2>
+			<p>Somos una empresa entusiasta y amante de la tecnología, que se dedica a comercializar artículos tecnológicos.
+				Nuestra razón de ser es complacer un mercado muy exigente, que quiere lo mejor y lo más nuevo del día hoy. Nos
+				dedicamos a la comercialización de diversos artículos tecnológicos principalmente hardware tanto a un mercado de
+				consumidor como a empresas. </p>
+			<br>
+			<h2 id="pVision">Visión</h2>
+			<p>Se pretender ser líderes en el mercado de hardware, para ello se tratará de abarcar todos los servicios que
+				ofrecemos y todos los que vayan surgiendo según el avance de la tecnología. Somos una empresa en constante
+				innovación que nuestro principal objetivo es la vanguardia y siempre tener lo mejor en tecnologías y siempre lo más
+				reciente del mercado. Ya que el mercado así lo requiere.</p>
+
+		</div>
+		<div id="mapa">
+			<h2>Encuentranos Aqui</h2>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1167.848529632095!2d-84.47003112428048!3d10.086090408890437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa044fb38b54223%3A0x5191afeade687765!2sCalle+2%2C+Provincia+de+Alajuela%2C+San+Ram%C3%B3n!5e0!3m2!1ses!2scr!4v1540609959852"
+			 width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</div>
+
+	</footer>
+	<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/funciones.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

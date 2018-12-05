@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Omicron venta de equipos electronicos</title>
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.css">
+	<link rel="stylesheet" href="FontAwesome/css/all.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<!-- meta para el responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body onload="muestraMonto();">
+
+	<header>
+		<div class="logo">
+			<h1>Omicrom Technology</h1>
+		</div>
+		<div class="slider">
+			<img class="imgSlider" src="imagenes/aria-vertagear-banner.jpg">
+			<img class="imgSlider" src="imagenes/laptopsgamingsi-1140x150.jpg">
+			<!-- <img class="imgSlider" src="imagenes/logo2.jpg"> -->
+		</div>
+	</header>
+	<nav>
+		<ul id="menu">
+			<li><a href="index.html"><i><i class="fas fa-home"></i></i> Inicio</a></li>
+			<li><a href="#"><i><i class="fas fa-laptop"></i></i> Computadoras <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('gaming.html')">Gaming</a></li>
+					<li><a href="javascript:pasarVariables('oficinaHogar.html')">Hogar / Oficina</a></li>
+					<li><a href="javascript:pasarVariables('laptop.html')">Laptop</a></li>
+					<li><a href="javascript:pasarVariables('monitores.html')">Monitores</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i><i class="fas fa-hdd"></i></i> Componentes <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('procesadores.html')">Procesadores</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaMadre.html')">Tarjetas Madre</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaVideo.html')">Tarjetas de Video</a></li>
+					<li><a href="#">Almacenamiento <i><i class="fas fa-angle-down"></i></i></a>
+						<ul id="menu3">
+							<li><a href="javascript:pasarVariables('discosDuros.html')">Disco Duro</a></li>
+							<li><a href="javascript:pasarVariables('discosExternos.html')">Disco Externo</a></li>
+							<li><a href="javascript:pasarVariables('ssd.html')">SSD</a></li>
+							<li><a href="javascript:pasarVariables('usb.html')">Memoria USB</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#"><i><i class="fas fa-headset"></i></i> Periféricos <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('teclado.html')">Teclados</a></li>
+					<li><a href="javascript:pasarVariables('mouse.html')">Mouses</a></li>
+					<li><a href="javascript:pasarVariables('headset.html')">Headset</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i><i class="fas fa-plug"></i></i> Accesorios <i><i class="fas fa-angle-down"></i></i></a>
+				<ul>
+					<li><a href="javascript:pasarVariables('sillas.html')">Sillas gammer</a></li>
+					<li><a href="javascript:pasarVariables('adaptadores.html')">Adaptadores</a></li>
+					<li><a href="javascript:pasarVariables('encapsulador.html')">Encapsuladores</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<button id="btnMenu" type="" onclick="deslizarMenu();"><i><i class="fas fa-bars"></i></i></button>
+	</nav>
+
+	<section>
+		<div id="tituloseccion">
+			<h2>Computadoras para la oficina y el hogar</h2>
+		</div>
+
+		<div class="contenidoPagina">
+			<div>
+				<i class="btnPrec" id="btn_1" onclick="capturaPrecio(this.id);"><i class="fas fa-check-circle"></i></i>
+				<i class="btnEliminarPrec" id="btnE_1" onclick="eliminarPrecio(this.id);"><i class="far fa-times-circle"></i></i>
+				<span class="cont">0</span>
+
+				<a href="#"><img src="imagenes/oficinaHogar1.jpg" alt="" id="1" onclick="mostrar(this.id);"></a>
+				<h3>PC A10 9700 - 4GB RAM - HD 1TB - TECLADO/MOUSE</h3>
+				<br>
+				<p><b>Precio: ¢ </b><span>419990.00 </span>i.v.i</p>
+
+			</div>
+			<div>
+				<i class="btnPrec" id="btn_2" onclick="capturaPrecio(this.id);"><i class="fas fa-check-circle"></i></i>
+				<i class="btnEliminarPrec" id="btnE_2" onclick="eliminarPrecio(this.id);"><i class="far fa-times-circle"></i></i>
+				<span class="cont">0</span>
+
+				<a href="#"><img src="imagenes/oficinaHogar2.jpg" alt="" id="2" onclick="mostrar(this.id);"></a>
+				<h3>Desktop DELL Optiplex 3050 Intel i5 7500 4GB DDR4 - 1TB - WIN10</h3>
+				<br>
+				<p><b>Precio: ¢ </b><span>477387.93 </span>i.v.i</p>
+
+			</div>
+			<div>
+				<i class="btnPrec" id="btn_3" onclick="capturaPrecio(this.id);"><i class="fas fa-check-circle"></i></i>
+				<i class="btnEliminarPrec" id="btnE_3" onclick="eliminarPrecio(this.id);"><i class="far fa-times-circle"></i></i>
+				<span class="cont">0</span>
+
+				<a href="#"><img src="imagenes/oficinaHogar3.jpg" alt="" id="3" onclick="mostrar(this.id);"></a>
+				<h3>PC Core i7 7700 - 4GB RAM - HDD 1TB - TECLADO/MOUSE</h3>
+				<br>
+				<p><b>Precio: ¢ </b><span>368474.40 </span>i.v.i</p>
+
+			</div>
+		</div>
+		<!-- div para el modal con la informacion del producto -->
+		<!-- imagen 1 -->
+		<div id="img1" class="modal1">
+			<spa id="cerrar" onclick="ocultar();">&times;</spa>
+			<div class="modal2">
+				<img id="im" src="imagenes/oficinaHogar1.jpg" alt="">
+				<div id="info" class="info">
+					<h1>Características del Producto</h1>
+					<br>
+					<p>CAJA NEGRO STANDARD INTELEC DE LUJO CON 4 BAHIAS</p>
+					<p>CPU AMD A10 9700 AM4</p>
+					<p>Tarjeta Madre ASUS</p>
+					<p>4GB de Memoria RAM DDR4</p>
+					<p>Disco Duro SATA de 1TB PULL</p>
+					<p>Teclado</p>
+					<p>Mouse</p>
+					<p>Tarjeta de Video integrada</p>
+					<p>Tarjeta de Sonido integrada</p>
+					<p>Tarjeta de Red integrada</p>
+					<p>No incluye monitor</p>
+				</div>
+			</div>
+		</div>
+		<!-- imagen 1 -->
+
+		<!-- imagen 2 -->
+		<div id="img2" class="modal1">
+			<spa id="cerrar" onclick="ocultar();">&times;</spa>
+			<div class="modal2">
+				<img id="im" src="imagenes/oficinaHogar2.jpg" alt="">
+				<div id="info" class="info">
+					<h1>Características del Producto</h1>
+					<br>
+					<p> Modelo,Tipo Desktop, Marca DELL,
+						Serie, Optiplex,, Modelo 3050 SFF, Número de Parte YPD3Y, Procesador Marca Intel Línea Core i5,
+						Modelo 7500, Generación 7ma Generación, Velocidad (hasta 3.80 GHz), Cache 6 MB, Memoria
+						Capacidad 4GB,Tipo, DDR4 Disco Duro, Capacidad 1TB, Gráficos Serie HD Graphics 630 Tipo Video
+						Integrado Unidad Óptica, Unidad Óptica No Incluida, Comunicación Red 10/100/1000 Mbps Sistema
+						Operativo, Sistema Operativo Windows 10 Pro (64 Bits)
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- imagen 2 -->
+
+		<!-- imagen 3 -->
+		<div id="img3" class="modal1">
+			<spa id="cerrar" onclick="ocultar();">&times;</spa>
+			<div class="modal2">
+				<img id="im" src="imagenes/oficinaHogar3.jpg" alt="">
+				<div id="info" class="info">
+					<h1>Características del Producto</h1>
+					<br>
+					<p>CAJA NEGRO STANDARD INTELEC DE LUJO CON 4 BAHIAS</p>
+					<p>CPU INTEL Core i7 7700</p>
+					<p>Tarjeta Madre H110</p>
+					<p>4GB de Memoria RAM DDR4</p>
+					<p>Disco Duro SATA de 1TB</p>
+					<p>Teclado</p>
+					<p>Mouse</p>
+					<p>Tarjeta de Video integrada</p>
+					<p>Tarjeta de Sonido integrada</p>
+					<p>Tarjeta de Red integrada</p>
+					<p>No incluye monitor</p>
+				</div>
+			</div>
+		</div>
+		<!-- imagen 3 -->
+
+
+		<!-- div para el modal con la informacion del producto -->
+	</section>
+	<aside>
+		<div id="accordion">
+			<h3 class="tituloMenu2"><i><i class="fas fa-calculator"></i></i> Cotice aquí su pc</h3>
+			<div>
+				<br>
+				<p> Total Cotizado:</p>
+				<br>
+				<input id="total" type="text" name="" value="¢ 0" placeholder="" readonly="readonly">
+
+				<br><br>
+				<p>Seleccione el check que tiene cada producto para agregarlo a la cotización</p>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-laptop"></i></i> Computadoras</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('gaming.html')">Gaming</a></li>
+					<li><a href="javascript:pasarVariables('oficinaHogar.html')">Hogar / Oficina</a></li>
+					<li><a href="javascript:pasarVariables('laptop.html')">Laptop</a></li>
+					<li><a href="javascript:pasarVariables('monitores.html')">Monitores</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-hdd"></i></i> Componentes</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('procesadores.html')">Procesadores</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaMadre.html')">Tarjetas Madre</a></li>
+					<li><a href="javascript:pasarVariables('tarjetaVideo.html')">Tarjetas de Video</a></li>
+					<li><a href="javascript:pasarVariables('discosDuros.html')">Disco Duro</a></li>
+					<li><a href="javascript:pasarVariables('discosExternos.html')">Disco Externo</a></li>
+					<li><a href="javascript:pasarVariables('ssd.html')">SSD</a></li>
+					<li><a href="javascript:pasarVariables('usb.html')">Memoria USB</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-headset"></i></i> Periféricos</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('teclado.html')">Teclados</a></li>
+					<li><a href="javascript:pasarVariables('mouse.html')">Mouses</a></li>
+					<li><a href="javascript:pasarVariables('headset.html')">Headset</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="fas fa-plug"></i></i> Accesorios</h3>
+			<div>
+				<ul>
+					<br>
+					<li><a href="javascript:pasarVariables('sillas.html')">Sillas gammer</a></li>
+					<li><a href="javascript:pasarVariables('adaptadores.html')">Adaptadores</a></li>
+					<li><a href="javascript:pasarVariables('encapsulador.html')">Encapsuladores</a></li>
+				</ul>
+			</div>
+			<h3 class="tituloMenu2"><i><i class="far fa-clock"></i></i> Horarios</h3>
+			<div>
+				<br><br><br>
+				<p><b> de lunes a viernes de 8:00 am a 6:00 pm y sabados de 8:00 am a 1:00 pm </b></p>
+			</div>
+		</div>
+	</aside>
+	<footer>
+		<div id="informacion">
+			<h1>Servicio al cliente</h1>
+			<br>
+			<ul>
+				<li><i><i class="fas fa-phone-volume"></i></i>
+					<p>(506)2256 4588 / (506)48561200</p>
+				</li>
+				<br>
+				<li><i><i class="fas fa-envelope"></i></i>
+					<p>www.ventas@Omicroncr.com</p>
+				</li>
+				<div id="redesS">
+					<div class="rs"><a href="#"><i><i class="fab fa-facebook"></i></i></a></div>
+					<div class="rs"><a href="#"><i><i class="fab fa-instagram"></i></i></a></div>
+					<div class="rs"><a href="#"><i><i class="fab fa-twitter-square"></i></i></a></div>
+				</div>
+			</ul>
+			<br>
+			<h2>Misión</h2>
+			<p>Somos una empresa entusiasta y amante de la tecnología, que se dedica a comercializar artículos tecnológicos.
+				Nuestra razón de ser es complacer un mercado muy exigente, que quiere lo mejor y lo más nuevo del día hoy. Nos
+				dedicamos a la comercialización de diversos artículos tecnológicos principalmente hardware tanto a un mercado de
+				consumidor como a empresas. </p>
+			<br>
+			<h2 id="pVision">Visión</h2>
+			<p>Se pretender ser líderes en el mercado de hardware, para ello se tratará de abarcar todos los servicios que
+				ofrecemos y todos los que vayan surgiendo según el avance de la tecnología. Somos una empresa en constante
+				innovación que nuestro principal objetivo es la vanguardia y siempre tener lo mejor en tecnologías y siempre lo más
+				reciente del mercado. Ya que el mercado así lo requiere.</p>
+
+		</div>
+		<div id="mapa">
+			<h2>Encuentranos Aqui</h2>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1167.848529632095!2d-84.47003112428048!3d10.086090408890437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa044fb38b54223%3A0x5191afeade687765!2sCalle+2%2C+Provincia+de+Alajuela%2C+San+Ram%C3%B3n!5e0!3m2!1ses!2scr!4v1540609959852"
+			 width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		</div>
+
+	</footer>
+
+	<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/funciones.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

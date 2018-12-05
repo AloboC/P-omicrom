@@ -1,0 +1,375 @@
+@import url(estilosModal.css);
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(36, 36, 36);
+	max-width: 1280px;
+	margin: auto;
+
+}
+
+.logo {
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+	color: red;
+	text-align: center;
+	text-shadow: orange 2px 2px 2px;
+}
+
+/*nombre de la empresa*/
+
+.slider {
+	width: 100%;
+	height: 200px;
+}
+
+.slider img {
+	width: 100%;
+	height: 200px;
+}
+
+/*imagenes del slider*/
+/*-------------------------------------------------------Nav*/
+nav {
+	width: 100%;
+	background-color: rgb(34, 42, 37);
+	box-shadow: 2px 2px 15px rgb(25, 84, 36);
+	z-index: 1;
+}
+
+nav ul {
+	background-color: rgb(34, 42, 37);
+}
+
+nav>ul {
+	display: flex;
+	/* el ul se le hace un display flex para que su contenido se acomode*/
+}
+
+/*submenus*/
+nav ul>li {
+	list-style-type: none;
+	padding: 5px 0px;
+}
+
+nav ul a {
+	color: rgba(252, 252, 252, .5);
+	margin: 20px 15px;
+	text-decoration: none;
+}
+
+nav>ul>li {
+	width: 100%;
+	position: relative;
+}
+
+nav ul li {
+	height: 30px;
+}
+
+/* Posicionamiento del submenu 1*/
+nav>ul>li>ul {
+	position: absolute;
+	top: 40px;
+	width: 100%;
+
+}
+
+/*Posición del submenu 2*/
+nav>ul>li>ul>li>ul {
+	position: absolute;
+	left: 100%;
+	top: 120px;
+	width: 200px;
+}
+
+#btnMenu {
+	display: none;
+}
+
+/*_____________________________________________________________________________ocultar los submenu*/
+nav>ul>li>ul,
+nav>ul>li>ul>li>ul,
+nav>ul>li>ul>li>ul {
+	display: none;
+	z-index: 2;
+
+}
+
+nav ul li:hover>a {
+	font-size: 18px;
+	color: #fff;
+
+}
+
+nav>ul>li:hover,
+nav>ul>li>ul>li:hover,
+nav>ul>li>ul>li>ul>li:hover {
+	cursor: pointer;
+	box-shadow: 1px 1px 10px rgb(25, 84, 36);
+}
+
+nav>ul>li:hover>ul,
+nav>ul>li>ul>li:hover>ul,
+nav>ul>li>ul>li:hover>ul {
+	display: block;
+}
+
+
+/*-------------------------------------------------------seccion*/
+
+section {
+	width: 80%;
+	margin: auto;
+	height: auto;
+	float: right;
+}
+
+#tituloseccion {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	color: #fff;
+}
+
+.contenidoPagina {
+	width: 95%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.contenidoPagina div {
+	width: 30%;
+	height: auto;
+	margin: 10px;
+	border: 1px solid rgba(255, 255, 255, .1);
+	background: rgb(46, 46, 46);
+	padding: 5px;
+	border-radius: 5px;
+
+}
+
+.contenidoPagina div img {
+	width: 100%;
+}
+
+.contenidoPagina div h3,.contenidoPagina div p {
+	color: #fff;
+}
+
+.precio {
+	font-weight: bold;
+}
+
+.contenidoPagina div:hover {
+	box-shadow: 3px 3px 15px red;
+	border-color: red;
+
+}
+
+.btnPrec {
+	float: left;
+	color: #fff;
+	margin: 5px 5px;
+	font-size: 20px;
+	z-index: 0;
+
+}
+
+.btnPrec:hover {
+	font-size: 22px;
+	text-shadow: 2px 2px 10px rgb(0, 0, 0);
+	color: rgb(12, 107, 0);
+	cursor: pointer;
+}
+
+.btnEliminarPrec {
+	color: #fff;
+	margin: 5px 5px;
+	font-size: 20px;
+	z-index: 0;
+	display: none;
+
+}
+
+.btnEliminarPrec:hover {
+	font-size: 22px;
+	text-shadow: 2px 2px 10px rgb(0, 0, 0);
+	color: red;
+	cursor: pointer;
+}
+
+
+
+.cont {
+	/*display: none;*/
+	float: right;
+	background-color: #fff;
+	width: 30px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 5px 5px;
+}
+
+
+/*------------------------------------------------------------ aside*/
+aside {
+	float: left;
+	width: 19%;
+	height: auto;
+	background-color: ·;
+	/*box-shadow: 1px 1px 10px rgb(25, 84, 36);*/
+	position: absolute;
+	top: 320px;
+	left: 30;
+	z-index: 1;
+
+}
+
+#tituloAside {
+	width: 100%;
+	height: 25px;
+	background-color: #fff;
+	text-align: center;
+}
+
+
+
+#accordion>div {
+	/*background-color: rgb(16.9, 28.6, 43.9);*/
+	background-color: #7EBA1A;
+
+}
+
+#accordion {
+	width: 100%;
+	text-align: left;
+	margin-top: 60px;
+	border-radius: 5px;
+	/*box-shadow: 1px 1px 10px rgb(25, 84, 36);*/
+	box-shadow: 1px 1px 10px yellow;
+
+
+}
+
+#accordion ul li {
+	list-style: none;
+	height: 30px;
+	width: 100%;
+	font-size: 15px;
+
+
+
+}
+
+#accordion ul li,
+#accordion div p,
+#total {
+
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.tituloMenu2 {
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+
+#accordion ul li a {
+	text-decoration: none;
+	color: #242424;
+
+}
+
+#accordion ul li a:hover {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#total {
+	height: 35px;
+	width: 70%;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.tituloMenu2 {
+	background-color: #B4000B;
+	color: rgba(255, 255, 255, .6);
+	height: 30px;
+}
+
+.tituloMenu2:hover {
+	cursor: pointer;
+	color: rgba(0, 0, 0, .6);
+}
+
+/*------------------------------------------------------------ footer*/
+
+
+footer {
+	background-color: rgb(0, 0, 0, .9);
+	box-shadow: 2px 2px 15px red;
+	width: 100%;
+	height: auto;
+	z-index: 20;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 5px;
+	color: #fff;
+}
+
+#redesS {
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	height: 60px;
+	margin-top: 10px;
+	/*border-top: 1px solid;*/
+
+}
+
+#informacion ul li {
+	list-style: none;
+}
+
+.rs {
+	font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+}
+
+#informacion {
+	width: 50%;
+	float: left;
+	padding: 5px 5px;
+	column-count: 2;
+	column-rule-style: dotted;
+	margin: 10px;
+}
+
+#mapa {
+	margin: 10px;
+	width: 45%;
+	height: auto;
+}
+
+#mapa iframe {
+
+	width: 100%;
+	height: 80%;
+
+}

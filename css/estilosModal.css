@@ -1,0 +1,66 @@
+.modal1 {
+    display: none;
+    width: 100%;
+    min-height: 1265px;
+    background-color: rgba(20, 20, 20, 0.5999999);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.modal2 {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background-color: #FFF;
+    opacity: 1;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    z-index: 3;
+
+
+}
+
+/* boton de cerrar el modal */
+#cerrar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    ;
+}
+
+#cerrar:hover {
+    cursor: pointer;
+    font-size: 30px;
+    color: rgba(251, 8, 8, 0.6);
+}
+
+#im {
+    /* float: left; */
+    width: 45%;
+    margin: auto;
+
+}
+
+#info {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+    overflow: hidden;
+    background-color: rgba(247, 244, 244, 0.55555555555555555555555);
+    color: rgba(65, 63, 63, 1);
+    box-sizing: border-box;
+    z-index: 3;
+
+}
+
+.texto_oculto {
+    display: none;
+}
